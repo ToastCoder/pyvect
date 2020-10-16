@@ -7,3 +7,5 @@ Vectoralg (or) Vector Algebra functions is a open source python module created f
 * [Vigneshwar Ravichandar](https://github.com/ToastCoder/)
 
 * [Moulishankar M R](https://github.com/Moulishankar10)
+
+* [Vishal Balaji Sivaraman](https://github.com/The-SocialLion)
