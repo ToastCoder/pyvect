@@ -30,3 +30,7 @@ def cross(x,y):
 # Return type: float
 def angle(x,y):
     return np.arccos(np.dot(x,y)/(np.linalg.norm(x)*np.linalg.norm(y)))
+
+
+def projection(x,y):
+    return np.dot(x,y)/np.linalg.norm(y)
