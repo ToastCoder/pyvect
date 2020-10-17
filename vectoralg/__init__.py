@@ -16,3 +16,10 @@ import numpy as np
 # Return type: int
 def dot(x,y):
     return np.dot(x,y)
+
+# cross() - Returns the cross product (or) vector of the two given vectors.
+# Syntax: vectoralg.cross(vector_1,vector_2)
+# vector_1 - First vector , vector_2 - Second vector
+# Return type: array
+def cross(x,y):
+    return np.cross(x,y)
