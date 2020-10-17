@@ -74,3 +74,17 @@ Output
 
 vectoralg.angle()
 ======================================
+
+About
+--------------------------------------
+
+Returns the angle formed by the two vectors in degrees.
+
+Syntax
+--------------------------------------
+
+>>> angle(vector_1,vector_2)
+
+vector_1 - First vector
+
+vector_2 - Second vector
