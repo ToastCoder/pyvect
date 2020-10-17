@@ -23,3 +23,6 @@ def dot(x,y):
 # Return type: array
 def cross(x,y):
     return np.cross(x,y)
+
+def angle(x,y):
+    return np.arccos(np.dot(x,y)/(np.linalg.norm(x)*np.linalg.norm(y)))
