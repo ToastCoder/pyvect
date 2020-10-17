@@ -88,3 +88,14 @@ Syntax
 vector_1 - First vector
 
 vector_2 - Second vector
+
+Return type
+--------------------------------------
+
+float
+
+
+Example
+---------------------------------------
+
+>>> vectoralg.angle([1,-1,0],[0,1,-1])
