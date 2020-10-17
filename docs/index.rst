@@ -114,3 +114,17 @@ About
 ---------------------------------------
 
 Returns the projection formed by first vector to the second vector.
+
+Syntax
+---------------------------------------
+
+>>> projection(vector_1,vector_2)
+
+vector_1 - First vector
+
+vector_2 - Second vector
+
+Return type
+---------------------------------------
+
+float
