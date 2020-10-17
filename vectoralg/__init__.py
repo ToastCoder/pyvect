@@ -24,5 +24,9 @@ def dot(x,y):
 def cross(x,y):
     return np.cross(x,y)
 
+# angle() - Returns the angle formed by the two vectors in degrees.
+# Syntax: vectoralg.angle(vector_1,vector_2)
+# vector_1 - First vector , vector_2 - Second vector
+# Return type: float
 def angle(x,y):
     return np.arccos(np.dot(x,y)/(np.linalg.norm(x)*np.linalg.norm(y)))
