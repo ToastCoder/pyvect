@@ -31,6 +31,9 @@ def cross(x,y):
 def angle(x,y):
     return np.arccos(np.dot(x,y)/(np.linalg.norm(x)*np.linalg.norm(y)))
 
-
+# projection() - Returns the projection formed by first vector to the second vector.
+# Syntax: vectoralg.projection(vector_1,vector_2)
+# vector_1 - First vector , vector_2 - Second vector
+# Return type: float
 def projection(x,y):
     return np.dot(x,y)/np.linalg.norm(y)
