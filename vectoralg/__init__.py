@@ -49,6 +49,5 @@ def isperpendicular(x,y):
 # Syntax: vectoralg.iscollinear(vector_1,vector_2)
 # vector_1 - First vector , vector_2 - Second vector
 # Return type: bool
-
 def iscollinear (x,y):
     return any(np.cross(x,y)) == 0
