@@ -37,3 +37,6 @@ def angle(x,y):
 # Return type: float
 def projection(x,y):
     return np.dot(x,y)/np.linalg.norm(y)
+
+def isperpendicular(x,y):
+    return np.dot(x,y) == 0
