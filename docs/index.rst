@@ -148,3 +148,12 @@ About
 -----------------------------------------
 
 Returns True if two vectors are perpendicular to each other. (i.e) Dot product of the two vectors is zero.
+
+Syntax
+-----------------------------------------
+
+>>> vectoralg.isperpendicular(vector_1,vector_2)
+
+vector_1 - First vector
+
+vector_2 - Second vector
