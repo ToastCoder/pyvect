@@ -45,5 +45,10 @@ def projection(x,y):
 def isperpendicular(x,y):
     return np.dot(x,y) == 0
 
+# iscollinear() - Returns True if two vectors are collinear. (i.e) Cross product of the two vectors is zero.
+# Syntax: vectoralg.iscollinear(vector_1,vector_2)
+# vector_1 - First vector , vector_2 - Second vector
+# Return type: bool
+
 def iscollinear (x,y):
     return any(np.cross(x,y)) == 0
