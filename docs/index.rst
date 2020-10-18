@@ -189,3 +189,7 @@ Syntax
 vector_1 - First vector
 
 vector_2 - Second vector
+
+Return type
+------------------------------------------------
+bool
