@@ -44,3 +44,6 @@ def projection(x,y):
 # Return type: bool
 def isperpendicular(x,y):
     return np.dot(x,y) == 0
+
+def iscollinear (x,y):
+    return any(np.cross(x,y)) == 0
