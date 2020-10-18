@@ -38,5 +38,9 @@ def angle(x,y):
 def projection(x,y):
     return np.dot(x,y)/np.linalg.norm(y)
 
+# isperpendicular() - Returns True if two vectors are perpendicular to each other. (i.e) Dot product of the two vectors is zero.
+# Syntax: vectoralg.isperpendicular(vector_1,vector_2)
+# vector_1 - First vector , vector_2 - Second vector
+# Return type: bool
 def isperpendicular(x,y):
     return np.dot(x,y) == 0
