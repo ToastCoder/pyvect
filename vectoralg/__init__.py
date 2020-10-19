@@ -58,3 +58,7 @@ def iscollinear (x,y):
 # Return type: array
 def unit_vector(x):
     return x/np.linalg.norm(x)
+
+def unit_normal(x,y):
+    return [np.cross(x,y)/np.linalg.norm(np.cross(x,y)),np.cross(x,y)/np.linalg.norm(np.cross(x,y))*-1]
+
