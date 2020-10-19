@@ -66,3 +66,6 @@ def unit_vector(x):
 def unit_normal(x,y):
     return [np.cross(x,y)/np.linalg.norm(np.cross(x,y)),np.cross(x,y)/np.linalg.norm(np.cross(x,y))*-1]
 
+def bisector(a,b):
+    return unit_vector(a)+unit_vector(b)
+
