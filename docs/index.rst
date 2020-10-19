@@ -289,3 +289,14 @@ vector_1 - First vector
 
 vector_2 - Second vector
 
+Return type
+-----------------------------------------------------
+
+array
+
+Example
+-----------------------------------------------------
+
+>>> vectoralg.bisector([1,4,3],[6,7,2])
+
+
