@@ -66,6 +66,10 @@ def unit_vector(x):
 def unit_normal(x,y):
     return [np.cross(x,y)/np.linalg.norm(np.cross(x,y)),np.cross(x,y)/np.linalg.norm(np.cross(x,y))*-1]
 
+# bisector() - Returns a vector in the direction of the bisector of the angle between two vectors.
+# Syntax: vectoralg.bisector(vector_1,vector_2)
+# vector_1 - First vector , vector_2 - Second vector
+# Return type: array
 def bisector(a,b):
     return unit_vector(a)+unit_vector(b)
 
