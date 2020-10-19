@@ -245,3 +245,12 @@ About
 --------------------------------------------------
 
 Returns the unit normal vector of given two vectors
+
+Syntax
+--------------------------------------------------
+
+>>> vectoralg.unit_normal(vector1,vector2)
+
+vector_1 - First vector 
+
+vector_2 - Second vector
