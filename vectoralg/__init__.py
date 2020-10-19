@@ -59,6 +59,10 @@ def iscollinear (x,y):
 def unit_vector(x):
     return x/np.linalg.norm(x)
 
+# normal() - Returns the unit normal vector of given two vectors.
+# Syntax: vectoralg.unit_normal(vector1,vector2)
+# vector_1 - First vector , vector_2 - Second vector
+# Return type: array
 def unit_normal(x,y):
     return [np.cross(x,y)/np.linalg.norm(np.cross(x,y)),np.cross(x,y)/np.linalg.norm(np.cross(x,y))*-1]
 
