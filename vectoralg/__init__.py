@@ -51,3 +51,10 @@ def isperpendicular(x,y):
 # Return type: bool
 def iscollinear (x,y):
     return any(np.cross(x,y)) == 0
+
+# vector() - Returns the unit vector of the given vector.
+# Syntax: vectoralg.unit_vector(vector_1)
+# vector_1 - Vector provided to the function
+# Return type: array
+def unit_vector(x):
+    return x/np.linalg.norm(x)
