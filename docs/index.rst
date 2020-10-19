@@ -254,3 +254,13 @@ Syntax
 vector_1 - First vector 
 
 vector_2 - Second vector
+
+Return type
+---------------------------------------------------
+
+array
+
+Example
+---------------------------------------------------
+
+>>> unit_normal([2,1,1],[1,2,1])
