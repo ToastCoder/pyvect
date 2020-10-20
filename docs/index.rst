@@ -314,4 +314,12 @@ About
 
 Returns a position vector between any two given vectors.
 
+Syntax
+-------------------------------------------------------
+
+>>> vectoralg.pos_vector(vector_1,vector_2)
+
+vector_1 - First vector
+
+vector_2 - Second vector.
 
