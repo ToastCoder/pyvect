@@ -80,5 +80,9 @@ def bisector(a,b):
 def pos_vector(a,b):
     return 0.5*(np.array([a])+np.array([b]))
 
+# iscoplanar() - Returns the boolean value (True) if the given three vectors satisfy the condition.
+# Syntax: vectoralg.iscoplanar(vector_1,vector_2,vector_3)
+# vector_1 - First vector , vector_2 - Second vector , vector_3 - Third vector.
+# Return type: bool
 def iscoplanar(a,b,c):
     return np.dot(np.cross(a,b),c)==0
