@@ -78,7 +78,7 @@ def bisector(a,b):
 # vector_1 - First vector , vector_2 - Second vector.
 # Return type: array
 def pos_vector(a,b):
-     return 0.5*(np.array([a])+np.array([b]))
+    return 0.5*(np.array([a])+np.array([b]))
 
-     def iscoplanar(a,b,c):
+def iscoplanar(a,b,c):
     return np.dot(np.cross(a,b),c)==0
