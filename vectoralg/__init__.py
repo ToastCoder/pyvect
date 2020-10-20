@@ -104,3 +104,8 @@ def reciprocal(a,b,c):
 # Return type: int
 def max_value(a,b):
     return np.linalg.norm(a)*np.linalg.norm(b)
+
+# min_value() - Returns the minimum value between any two given vectors.
+# Syntax: vectoralg.min_value(vector_1,vector_2)
+# vector_1 - First vector , vector_2 - Second vector.
+# Return type: int
