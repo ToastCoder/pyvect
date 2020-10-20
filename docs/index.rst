@@ -348,3 +348,14 @@ About
 
 Returns the boolean value (True) if the given three vectors satisfy the condition.
 
+Syntax
+--------------------------------------------------------
+
+>>> vectoralg.iscoplanar(vector_1,vector_2,vector_3)
+
+vector_1 - First vector
+
+vector_2 - Second vector
+
+vector_3 - Third vector.
+
