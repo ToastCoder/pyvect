@@ -73,3 +73,5 @@ def unit_normal(x,y):
 def bisector(a,b):
     return unit_vector(a)+unit_vector(b)
 
+def pos_vector(a,b):
+     return 0.5*(np.array([a])+np.array([b]))
