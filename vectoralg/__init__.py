@@ -86,3 +86,8 @@ def pos_vector(a,b):
 # Return type: bool
 def iscoplanar(a,b,c):
     return np.dot(np.cross(a,b),c)==0
+
+# reciprocal() - Returns three reciprocal vector for the given three vectors.
+# Syntax: vectoralg.reciprocal(vector_1,vector_2,vector_3)
+# vector_1 - First vector , vector_2 - Second vector , vector_3 - Third vector.
+# Return type: array
