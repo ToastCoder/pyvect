@@ -91,3 +91,9 @@ def iscoplanar(a,b,c):
 # Syntax: vectoralg.reciprocal(vector_1,vector_2,vector_3)
 # vector_1 - First vector , vector_2 - Second vector , vector_3 - Third vector.
 # Return type: array
+def reciprocal(a,b,c):
+    l=[]
+    l.append((np.cross(b,c)/np.dot([np.cross(a,b)],c)))
+    l.append((np.cross(c,a)/np.dot([np.cross(a,b)],c)))
+    l.append((np.cross(a,b)/np.dot([np.cross(a,b)],c)))
+    return np.array([l])
