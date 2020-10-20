@@ -359,3 +359,14 @@ vector_2 - Second vector
 
 vector_3 - Third vector.
 
+Return type
+--------------------------------------------------------
+
+bool
+
+Example
+--------------------------------------------------------
+
+vectoralg.iscoplanar([1,4,2],[5,3,8],[1,6,7])
+
+
