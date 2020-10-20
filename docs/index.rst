@@ -340,3 +340,11 @@ Output
 | array([[3. , 5. , 2.5]])                             |
 +------------------------------------------------------+
 
+vectoralg.iscoplanar()
+========================================================
+
+About
+--------------------------------------------------------
+
+Returns the boolean value (True) if the given three vectors satisfy the condition.
+
