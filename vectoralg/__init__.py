@@ -102,3 +102,5 @@ def reciprocal(a,b,c):
 # Syntax: vectoralg.max_value(vector_1,vector_2)
 # vector_1 - First vector , vector_2 - Second vector.
 # Return type: int
+def max_value(a,b):
+    return np.linalg.norm(a)*np.linalg.norm(b)
