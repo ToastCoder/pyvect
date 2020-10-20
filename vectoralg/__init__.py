@@ -73,5 +73,9 @@ def unit_normal(x,y):
 def bisector(a,b):
     return unit_vector(a)+unit_vector(b)
 
+# pos_vector() - Returns a position vector between any two given vectors.
+# Syntax: vectoralg.pos_vector(vector_1,vector_2)
+# vector_1 - First vector , vector_2 - Second vector.
+# Return type: array
 def pos_vector(a,b):
      return 0.5*(np.array([a])+np.array([b]))
