@@ -323,3 +323,13 @@ vector_1 - First vector
 
 vector_2 - Second vector.
 
+Return type
+--------------------------------------------------------
+
+array
+
+Example
+--------------------------------------------------------
+
+vectoralg.pos_vector([1,3,4],[5,7,1])
+
