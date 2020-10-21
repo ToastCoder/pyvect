@@ -489,3 +489,12 @@ About
 --------------------------------------------------------------
 
 Returns the area of a triangle where the two adjacent sides of the triangle are given.
+
+Syntax
+-------------------------------------------------------------
+
+>>> vectoralg.area.triangle_adj(vector_1,vector_2)
+
+vector_1 - First adjacent side 
+
+vector_2 - Second adjacent side
