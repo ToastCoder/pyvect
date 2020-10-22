@@ -10,6 +10,10 @@
 # Essential modules
 import numpy as np
 
+# Importing Submodules
+from . import area
+from area import *
+
 # dot() - Returns the dot product of the two given vectors.
 # Syntax: vectoralg.dot(vector_1,vector_2)
 # vector_1 - First vector , vector_2 - Second vector
