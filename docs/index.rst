@@ -521,3 +521,5 @@ vectoralg.triangle_pos()
 
 About
 --------------------------------------------------------------
+
+Returns the area of the triangle based on the given three positional vectors.
