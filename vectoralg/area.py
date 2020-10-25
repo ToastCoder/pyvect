@@ -14,3 +14,6 @@ import numpy as np
 # Return type: float
 def triangle_adj(x,y):
     return abs(0.5*np.linalg.norm(np.cross(x,y)))
+
+def triangle_pos(a,b,c):
+    return abs(0.5*np.linalg.norm(np.cross(a,b)+np.cross(b,c)+np.cross(c,a)))
