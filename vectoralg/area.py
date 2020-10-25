@@ -15,5 +15,9 @@ import numpy as np
 def triangle_adj(x,y):
     return abs(0.5*np.linalg.norm(np.cross(x,y)))
 
+# triangle_pos() - Returns the area of the triangle based on the given three positional vectors.
+# Syntax: vectoralg.area.triangle_pos(p1,p2,p3)
+# p1,p2,p3 - positional vectors of the triangle.
+# Return type: float
 def triangle_pos(a,b,c):
     return abs(0.5*np.linalg.norm(np.cross(a,b)+np.cross(b,c)+np.cross(c,a)))
