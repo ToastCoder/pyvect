@@ -528,3 +528,5 @@ Syntax
 -------------------------------------------------------------
 
 >>> vectoralg.area.triangle_pos(p1,p2,p3)
+
+p1,p2,p3 - positional vectors of the triangle.
