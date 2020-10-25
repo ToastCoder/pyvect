@@ -523,3 +523,6 @@ About
 --------------------------------------------------------------
 
 Returns the area of the triangle based on the given three positional vectors.
+
+Syntax
+-------------------------------------------------------------
