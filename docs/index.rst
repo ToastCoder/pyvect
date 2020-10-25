@@ -526,3 +526,5 @@ Returns the area of the triangle based on the given three positional vectors.
 
 Syntax
 -------------------------------------------------------------
+
+>>> vectoralg.area.triangle_pos(p1,p2,p3)
