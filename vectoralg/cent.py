@@ -18,6 +18,6 @@ def triangle(a,b,c):
 # tetrahedron() - Returns the centroid vector in the tetrahedron based on the the four given positional vectors.
 # Syntax: vectoralg.cent.tetrahedron(p1,p2,p3,p4)
 # p1,p2,p3,p4 - positional vectors of the tetrahedron.
-# Return type: float
+# Return type: array
 def tetrahedron(a,b,c,d):
     return 0.25*(np.array([a])+np.array([b])+np.array([c])+np.array([d]))
