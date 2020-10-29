@@ -28,3 +28,10 @@ def triangle_pos(a,b,c):
 # Return type: float
 def quad(d1,d2):
     return abs(0.5*np.linalg.norm(np.cross(d1,d2)))
+
+# parallelogram() - Returns the area of parallelogram based on the two adjacent vectors.
+# Syntax: vectoralg.area.parallelogram(vector_1,vector_2)
+# vector_1 - First vector , vector_2 - Second vector.
+# Return type: int
+def parallelogram(a,b):
+    return abs(np.linalg.norm(np.cross(a,b)))
