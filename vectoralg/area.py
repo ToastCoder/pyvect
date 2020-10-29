@@ -21,3 +21,10 @@ def triangle_adj(x,y):
 # Return type: float
 def triangle_pos(a,b,c):
     return abs(0.5*np.linalg.norm(np.cross(a,b)+np.cross(b,c)+np.cross(c,a)))
+
+# quad() - Returns the area of a quadrilateral based on the diagonal vectors.
+# Syntax: vectoalg.area.quad(diagonal_1,diagonal_2)
+# diagonal_1 - Primary diagonal of the quadrilateral, diagonal_2 - Secondary diagonal of the quadrilateral.
+# Return type: float
+def quad(d1,d2):
+    return abs(0.5*np.linalg.norm(np.cross(d1,d2)))
