@@ -32,13 +32,13 @@ def quad(d1,d2):
 # parallelogram() - Returns the area of parallelogram based on the two adjacent vectors.
 # Syntax: vectoralg.area.parallelogram(vector_1,vector_2)
 # vector_1 - First vector , vector_2 - Second vector.
-# Return type: int
+# Return type: float
 def parallelogram(a,b):
     return abs(np.linalg.norm(np.cross(a,b)))
 
 # tetrahedron() - Returns the area of tetrahedron based on the three position vectors.
 # Syntax: vectoralg.area.tetrahedron(p1,p2,p3)
 # p1,p2,p3 - positional vectors of the tetrahedron.
-# Return type: int
+# Return type: float
 def tetrahedron(a,b,c):
     return abs(0.1666*np.dot(np.cross(a,b),c))
