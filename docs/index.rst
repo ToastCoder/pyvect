@@ -1,9 +1,9 @@
 Introduction
 ====================================
 
-Vectoralg (or) Vector Algebra functions is a open source python module created for the purpose of simplifying the vector calculations such as finding the angle between vectors, projection of one vector over the other and much more...!
+Pyvect is a open source python module created for the purpose of simplifying the vector calculations such as finding the angle between vectors, projection of one vector over the other and much more...!
 
-vectoralg.dot()
+pyvect.dot()
 ====================================
 
 About
@@ -28,7 +28,7 @@ int
 Example
 -------------------------------------
 
->>> vectoralg.dot([2,3,4],[1,5,3])
+>>> pyvect.dot([2,3,4],[1,5,3])
 
 
 Output
@@ -37,7 +37,7 @@ Output
 | 29                                |
 +-----------------------------------+
 
-vectoralg.cross()
+pyvect.cross()
 =====================================
 
 About
@@ -62,7 +62,7 @@ array
 Example
 --------------------------------------
 
->>> vectoralg.cross([2,3,4],[1,5,3])
+>>> pyvect.cross([2,3,4],[1,5,3])
 
 Output
 --------------------------------------
@@ -71,7 +71,7 @@ Output
 | array([-11,-2,7])                  |
 +------------------------------------+
 
-vectoralg.angle()
+pyvect.angle()
 ======================================
 
 About
@@ -96,7 +96,7 @@ float
 Example
 ---------------------------------------
 
->>> vectoralg.angle([1,-1,0],[0,1,-1])
+>>> pyvect.angle([1,-1,0],[0,1,-1])
 
 Output
 ---------------------------------------
@@ -105,7 +105,7 @@ Output
 | 2.0943951023931953                  |
 +-------------------------------------+
 
-vectoralg.projection()
+pyvect.projection()
 =======================================
 
 About
@@ -130,7 +130,7 @@ float
 Example
 ---------------------------------------
 
->>> vectoralg.projection([1,2,3],[4,5,6])
+>>> pyvect.projection([1,2,3],[4,5,6])
 
 Output
 ----------------------------------------
@@ -139,7 +139,7 @@ Output
 | 3.6467384467084143                   |
 +--------------------------------------+
 
-vectoralg.isperpendicular()
+pyvect.isperpendicular()
 ========================================
 
 About
@@ -150,7 +150,7 @@ Returns True if two vectors are perpendicular to each other. (i.e) Dot product o
 Syntax
 -----------------------------------------
 
->>> vectoralg.isperpendicular(vector_1,vector_2)
+>>> pyvect.isperpendicular(vector_1,vector_2)
 
 vector_1 - First vector
 
@@ -164,7 +164,7 @@ bool
 Example
 ------------------------------------------
 
->>> vectoralg.isperpendicular([-3,4,-7],[2,-51,-30])
+>>> pyvect.isperpendicular([-3,4,-7],[2,-51,-30])
 
 Output
 -------------------------------------------
@@ -173,7 +173,7 @@ Output
 | True                                    |
 +-----------------------------------------+
 
-vectoralg.iscollinear()
+pyvect.iscollinear()
 ============================================
 
 About
@@ -184,7 +184,7 @@ Returns True if two vectors are collinear. (i.e) Cross product of the two vector
 Syntax
 ----------------------------------------------
 
->>> vectoralg.iscollinear(vector_1,vector_2)
+>>> pyvect.iscollinear(vector_1,vector_2)
 
 vector_1 - First vector
 
@@ -197,7 +197,7 @@ bool
 Example
 ------------------------------------------------
 
->>> vectoralg.iscollinear([1,2,3],[2,4,6])
+>>> pyvect.iscollinear([1,2,3],[2,4,6])
 
 Output
 -------------------------------------------------
@@ -206,7 +206,7 @@ Output
 | True                                           |
 +------------------------------------------------+
 
-vectoralg.unit_vector()
+pyvect.unit_vector()
 ==================================================
 
 About
@@ -217,7 +217,7 @@ Returns the unit vector of the given vector.
 Syntax
 --------------------------------------------------
 
->>> vectoralg.unit_vector(vector_1)
+>>> pyvect.unit_vector(vector_1)
 
 vector_1 - Vector provided to the function
 
@@ -229,7 +229,7 @@ array
 Example
 ---------------------------------------------------
 
->>> vectoralg.unit_vector([2,3,7])
+>>> pyvect.unit_vector([2,3,7])
 
 Output
 ---------------------------------------------------
@@ -238,7 +238,7 @@ Output
 | array([0.25400025, 0.38100038, 0.88900089])     |
 +-------------------------------------------------+
 
-vectoralg.unit_normal()
+pyvect.unit_normal()
 ==================================================
 
 About
@@ -249,7 +249,7 @@ Returns the unit normal vector of given two vectors
 Syntax
 --------------------------------------------------
 
->>> vectoralg.unit_normal(vector1,vector2)
+>>> pyvect.unit_normal(vector1,vector2)
 
 vector_1 - First vector 
 
@@ -272,7 +272,7 @@ Output
 | [array([-0.30151134, -0.30151134,  0.90453403]), array([ 0.30151134,  0.30151134, -0.90453403])] | 
 +--------------------------------------------------------------------------------------------------+
 
-vectoralg.bisector()
+pyvect.bisector()
 ==================================================
 
 About
@@ -283,7 +283,7 @@ Returns a vector in the direction of the bisector of the angle between two vecto
 Syntax
 ----------------------------------------------------
 
->>> vectoralg.bisector(vector_1,vector_2)
+>>> pyvect.bisector(vector_1,vector_2)
 
 vector_1 - First vector
 
@@ -297,7 +297,7 @@ array
 Example
 -----------------------------------------------------
 
->>> vectoralg.bisector([1,4,3],[6,7,2])
+>>> pyvect.bisector([1,4,3],[6,7,2])
 
 Output
 ------------------------------------------------------
@@ -306,7 +306,7 @@ Output
 | array([0.83211486, 1.52646306, 0.80034798])        |
 +----------------------------------------------------+
 
-vectoralg.pos_vector()
+pyvect.pos_vector()
 =======================================================
 
 About
@@ -317,7 +317,7 @@ Returns a position vector between any two given vectors.
 Syntax
 -------------------------------------------------------
 
->>> vectoralg.pos_vector(vector_1,vector_2)
+>>> pyvect.pos_vector(vector_1,vector_2)
 
 vector_1 - First vector
 
@@ -331,7 +331,7 @@ array
 Example
 --------------------------------------------------------
 
-vectoralg.pos_vector([1,3,4],[5,7,1])
+pyvect.pos_vector([1,3,4],[5,7,1])
 
 Output
 --------------------------------------------------------
@@ -340,7 +340,7 @@ Output
 | array([[3. , 5. , 2.5]])                             |
 +------------------------------------------------------+
 
-vectoralg.iscoplanar()
+pyvect.iscoplanar()
 ========================================================
 
 About
@@ -351,7 +351,7 @@ Returns the boolean value (True) if the given three vectors satisfy the conditio
 Syntax
 --------------------------------------------------------
 
->>> vectoralg.iscoplanar(vector_1,vector_2,vector_3)
+>>> pyvect.iscoplanar(vector_1,vector_2,vector_3)
 
 vector_1 - First vector
 
@@ -367,7 +367,7 @@ bool
 Example
 --------------------------------------------------------
 
-vectoralg.iscoplanar([1,4,2],[5,3,8],[1,6,7])
+pyvect.iscoplanar([1,4,2],[5,3,8],[1,6,7])
 
 Output
 --------------------------------------------------------
@@ -376,7 +376,7 @@ Output
 | False                                                |
 +------------------------------------------------------+
 
-vectoralg.reciprocal()
+pyvect.reciprocal()
 ============================================================
 
 About
@@ -387,7 +387,7 @@ Returns three reciprocal vector for the given three vectors.
 Syntax
 ------------------------------------------------------------
 
->>> vectoralg.reciprocal(vector_1,vector_2,vector_3)
+>>> pyvect.reciprocal(vector_1,vector_2,vector_3)
 
 vector_1 - First vector
 
@@ -402,7 +402,7 @@ array
 Example
 --------------------------------------------------------------
 
->>> vectoralg.reciprocal([1,4,2],[5,3,8],[1,6,7])
+>>> pyvect.reciprocal([1,4,2],[5,3,8],[1,6,7])
 
 Output
 --------------------------------------------------------------
@@ -413,7 +413,7 @@ Output
 |       [-0.32098765, -0.02469136,  0.20987654]]])           |
 +------------------------------------------------------------+
 
-vectoralg.max_value()
+pyvect.max_value()
 ==============================================================
 
 About
@@ -424,7 +424,7 @@ Returns the maximum value between any two given vectors.
 Syntax
 -------------------------------------------------------------
 
->>> vectoralg.max_value(vector_1,vector_2)
+>>> pyvect.max_value(vector_1,vector_2)
 
 vector_1 - First vector
 
@@ -438,7 +438,7 @@ float
 Example
 ---------------------------------------------------------------
 
->>> vectoralg.max_value([1,4,2],[5,3,8])
+>>> pyvect.max_value([1,4,2],[5,3,8])
 
 Output
 ---------------------------------------------------------------
@@ -447,7 +447,7 @@ Output
 | 45.36518488885502                                           |
 +-------------------------------------------------------------+
 
-vectoralg.min_value()
+pyvect.min_value()
 ==============================================================
 
 About
@@ -458,7 +458,7 @@ Returns the minimum value between any two given vectors.
 Syntax
 -------------------------------------------------------------
 
->>> vectoralg.min_value(vector_1,vector_2)
+>>> pyvect.min_value(vector_1,vector_2)
 
 vector_1 - First vector
 
@@ -472,7 +472,7 @@ float
 Example
 ---------------------------------------------------------------
 
->>> vectoralg.min_value([1,4,2],[5,3,8])
+>>> pyvect.min_value([1,4,2],[5,3,8])
 
 Output
 ---------------------------------------------------------------
@@ -482,7 +482,7 @@ Output
 +-------------------------------------------------------------+
 
 
-vectoralg.area.triangle_adj()
+pyvect.area.triangle_adj()
 ==============================================================
 
 About
@@ -493,7 +493,7 @@ Returns the area of a triangle where the two adjacent sides of the triangle are 
 Syntax
 -------------------------------------------------------------
 
->>> vectoralg.area.triangle_adj(vector_1,vector_2)
+>>> pyvect.area.triangle_adj(vector_1,vector_2)
 
 vector_1 - First adjacent side 
 
@@ -507,7 +507,7 @@ float
 Example
 ---------------------------------------------------------------
 
->>> vectoralg.area.triangle_adj([1,4,2],[6,4,8])
+>>> pyvect.area.triangle_adj([1,4,2],[6,4,8])
 
 Output
 ---------------------------------------------------------------
@@ -516,7 +516,7 @@ Output
 | 15.748015748023622                                          |
 +-------------------------------------------------------------+
 
-vectoralg.area.triangle_pos()
+pyvect.area.triangle_pos()
 ==============================================================
 
 About
@@ -527,7 +527,7 @@ Returns the area of the triangle based on the given three positional vectors.
 Syntax
 ---------------------------------------------------------------
 
->>> vectoralg.area.triangle_pos(p1,p2,p3)
+>>> pyvect.area.triangle_pos(p1,p2,p3)
 
 p1,p2,p3 - positional vectors of the triangle.
 
@@ -539,7 +539,7 @@ float
 Example
 ---------------------------------------------------------------
 
->>> vectoralg.area.triangle_pos([2,3,4],[1,5,7],[4,5,1])
+>>> pyvect.area.triangle_pos([2,3,4],[1,5,7],[4,5,1])
 
 Output
 ---------------------------------------------------------------
@@ -548,7 +548,7 @@ Output
 | 6.87386354243376                                            |
 +-------------------------------------------------------------+
 
-vectoralg.area.quad()
+pyvect.area.quad()
 ===============================================================
 
 About
@@ -559,7 +559,7 @@ Returns the area of a quadrilateral based on the diagonal vectors.
 Syntax
 ----------------------------------------------------------------
 
->>> vectoralg.area.quad(diagonal_1,diagonal_2)
+>>> pyvect.area.quad(diagonal_1,diagonal_2)
 
 diagonal_1 - Primary diagonal of the quadrilateral
 
@@ -573,7 +573,7 @@ float
 Example
 -----------------------------------------------------------------
 
->>> vectoralg.area.quad([1,3,5],[2,3,6])
+>>> pyvect.area.quad([1,3,5],[2,3,6])
 
 Output
 -----------------------------------------------------------------
@@ -582,7 +582,7 @@ Output
 | 2.9154759474226504                                            |
 +---------------------------------------------------------------+
 
-vectoralg.area.parallelogram()
+pyvect.area.parallelogram()
 =================================================================
 
 About
@@ -593,7 +593,7 @@ Returns the area of parallelogram based on the two adjacent vectors.
 Syntax
 -----------------------------------------------------------------
 
->>> vectoralg.area.parallelogram(vector_1,vector_2)
+>>> pyvect.area.parallelogram(vector_1,vector_2)
 
 Return type
 -----------------------------------------------------------------
@@ -603,7 +603,7 @@ float
 Example
 -----------------------------------------------------------------
 
->>> vectoralg.area.parallelogram([1,4,5],[3,2,7])
+>>> pyvect.area.parallelogram([1,4,5],[3,2,7])
 
 Output
 ------------------------------------------------------------------
@@ -612,7 +612,7 @@ Output
 | 22.090722034374522                                             |
 +----------------------------------------------------------------+
 
-vectoralg.area.tetrahedron()
+pyvect.area.tetrahedron()
 ==================================================================
 
 About
@@ -623,7 +623,7 @@ Returns the area of tetrahedron based on the three position vectors.
 Syntax
 ------------------------------------------------------------------
 
->>> vectoralg.area.tetrahedron(p1,p2,p3)
+>>> pyvect.area.tetrahedron(p1,p2,p3)
 
 p1,p2,p3 - Positional vectors of the tetrahedron
 
@@ -635,7 +635,7 @@ float
 Example
 --------------------------------------------------------------------
 
->>> vectoralg.area.tetrahedron([1,4,5],[3,2,7],[2,4,1])
+>>> pyvect.area.tetrahedron([1,4,5],[3,2,7],[2,4,1])
 
 Output
 --------------------------------------------------------------------
@@ -644,7 +644,7 @@ Output
 | 9.6628                                                           |
 +------------------------------------------------------------------+
 
-vectoralg.cent.triangle()
+pyvect.cent.triangle()
 =====================================================================
 
 About
@@ -655,7 +655,7 @@ Returns the centroid vector in the triangle based on the the three given positio
 Syntax
 ---------------------------------------------------------------------
 
->>> vectoralg.cent.triangle(p1,p2,p3)
+>>> pyvect.cent.triangle(p1,p2,p3)
 
 p1,p2,p3 - Positional vectors of the triangle
 
@@ -667,7 +667,7 @@ array
 Example
 ----------------------------------------------------------------------
 
->>> vectoralg.cent.triangle([1,4,5],[3,2,7],[2,4,1])
+>>> pyvect.cent.triangle([1,4,5],[3,2,7],[2,4,1])
 
 Output
 ----------------------------------------------------------------------
@@ -676,7 +676,7 @@ Output
 | array([[1.98, 3.3 , 4.29]])                                        |
 +--------------------------------------------------------------------+
 
-vectoralg.cent.tetrahedron()
+pyvect.cent.tetrahedron()
 =====================================================================
 
 About
@@ -687,7 +687,7 @@ Returns the centroid vector in the tetrahedron based on the the four given posit
 Syntax
 ---------------------------------------------------------------------
 
->>> vectoralg.cent.tetrahedron(p1,p2,p3,p4)
+>>> pyvect.cent.tetrahedron(p1,p2,p3,p4)
 
 p1,p2,p3,p4 - Positional vectors of the tetrahedron
 
@@ -699,7 +699,7 @@ array
 Example
 ----------------------------------------------------------------------
 
->>> vectoralg.cent.tetrahedron([1,4,5],[3,2,7],[2,4,1],[3,5,6])
+>>> pyvect.cent.tetrahedron([1,4,5],[3,2,7],[2,4,1],[3,5,6])
 
 Output
 ----------------------------------------------------------------------
