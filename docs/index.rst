@@ -150,7 +150,7 @@ Returns True if two vectors are perpendicular to each other. (i.e) Dot product o
 Syntax
 -----------------------------------------
 
->>> pyvect.isperpendicular(vector_1,vector_2)
+>>> isperpendicular(vector_1,vector_2)
 
 vector_1 - First vector
 
@@ -184,7 +184,7 @@ Returns True if two vectors are collinear. (i.e) Cross product of the two vector
 Syntax
 ----------------------------------------------
 
->>> pyvect.iscollinear(vector_1,vector_2)
+>>> iscollinear(vector_1,vector_2)
 
 vector_1 - First vector
 
@@ -217,7 +217,7 @@ Returns the unit vector of the given vector.
 Syntax
 --------------------------------------------------
 
->>> pyvect.unit_vector(vector_1)
+>>> unit_vector(vector_1)
 
 vector_1 - Vector provided to the function
 
@@ -249,7 +249,7 @@ Returns the unit normal vector of given two vectors
 Syntax
 --------------------------------------------------
 
->>> pyvect.unit_normal(vector1,vector2)
+>>> unit_normal(vector1,vector2)
 
 vector_1 - First vector 
 
@@ -283,7 +283,7 @@ Returns a vector in the direction of the bisector of the angle between two vecto
 Syntax
 ----------------------------------------------------
 
->>> pyvect.bisector(vector_1,vector_2)
+>>> bisector(vector_1,vector_2)
 
 vector_1 - First vector
 
@@ -317,7 +317,7 @@ Returns a position vector between any two given vectors.
 Syntax
 -------------------------------------------------------
 
->>> pyvect.pos_vector(vector_1,vector_2)
+>>> pos_vector(vector_1,vector_2)
 
 vector_1 - First vector
 
@@ -351,7 +351,7 @@ Returns the boolean value (True) if the given three vectors satisfy the conditio
 Syntax
 --------------------------------------------------------
 
->>> pyvect.iscoplanar(vector_1,vector_2,vector_3)
+>>> iscoplanar(vector_1,vector_2,vector_3)
 
 vector_1 - First vector
 
@@ -387,7 +387,7 @@ Returns three reciprocal vector for the given three vectors.
 Syntax
 ------------------------------------------------------------
 
->>> pyvect.reciprocal(vector_1,vector_2,vector_3)
+>>> reciprocal(vector_1,vector_2,vector_3)
 
 vector_1 - First vector
 
@@ -424,7 +424,7 @@ Returns the maximum value between any two given vectors.
 Syntax
 -------------------------------------------------------------
 
->>> pyvect.max_value(vector_1,vector_2)
+>>> max_value(vector_1,vector_2)
 
 vector_1 - First vector
 
@@ -458,7 +458,7 @@ Returns the minimum value between any two given vectors.
 Syntax
 -------------------------------------------------------------
 
->>> pyvect.min_value(vector_1,vector_2)
+>>> min_value(vector_1,vector_2)
 
 vector_1 - First vector
 
@@ -493,7 +493,7 @@ Returns the area of a triangle where the two adjacent sides of the triangle are 
 Syntax
 -------------------------------------------------------------
 
->>> pyvect.area.triangle_adj(vector_1,vector_2)
+>>> triangle_adj(vector_1,vector_2)
 
 vector_1 - First adjacent side 
 
@@ -527,7 +527,7 @@ Returns the area of the triangle based on the given three positional vectors.
 Syntax
 ---------------------------------------------------------------
 
->>> pyvect.area.triangle_pos(p1,p2,p3)
+>>> triangle_pos(p1,p2,p3)
 
 p1,p2,p3 - positional vectors of the triangle.
 
@@ -559,7 +559,7 @@ Returns the area of a quadrilateral based on the diagonal vectors.
 Syntax
 ----------------------------------------------------------------
 
->>> pyvect.area.quad(diagonal_1,diagonal_2)
+>>> quad(diagonal_1,diagonal_2)
 
 diagonal_1 - Primary diagonal of the quadrilateral
 
@@ -593,7 +593,7 @@ Returns the area of parallelogram based on the two adjacent vectors.
 Syntax
 -----------------------------------------------------------------
 
->>> pyvect.area.parallelogram(vector_1,vector_2)
+>>> parallelogram(vector_1,vector_2)
 
 Return type
 -----------------------------------------------------------------
@@ -623,7 +623,7 @@ Returns the area of tetrahedron based on the three position vectors.
 Syntax
 ------------------------------------------------------------------
 
->>> pyvect.area.tetrahedron(p1,p2,p3)
+>>> tetrahedron(p1,p2,p3)
 
 p1,p2,p3 - Positional vectors of the tetrahedron
 
@@ -655,7 +655,7 @@ Returns the centroid vector in the triangle based on the the three given positio
 Syntax
 ---------------------------------------------------------------------
 
->>> pyvect.cent.triangle(p1,p2,p3)
+>>> triangle(p1,p2,p3)
 
 p1,p2,p3 - Positional vectors of the triangle
 
@@ -687,7 +687,7 @@ Returns the centroid vector in the tetrahedron based on the the four given posit
 Syntax
 ---------------------------------------------------------------------
 
->>> pyvect.cent.tetrahedron(p1,p2,p3,p4)
+>>> tetrahedron(p1,p2,p3,p4)
 
 p1,p2,p3,p4 - Positional vectors of the tetrahedron
 
