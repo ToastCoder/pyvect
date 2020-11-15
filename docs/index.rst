@@ -753,7 +753,7 @@ Returns the distance between two skew lines.
 Syntax
 -----------------------------------------------------------------------
 
->>> pyvect.dist.sk_line(a1_vector,a2_vector,u_vector,v_vector)
+>>> sk_line(a1_vector,a2_vector,u_vector,v_vector)
 
 a1_vector, a2_vector - position vectors
 
@@ -774,4 +774,40 @@ Output
 
 +-----------------------------------------------------------------------+
 | 3.2576045465500365                                                    |
++-----------------------------------------------------------------------+
+
+pyvect.dist.pt_plane()
+=========================================================================
+
+About
+-------------------------------------------------------------------------
+
+Returns the distance between a point and a plane.
+
+Syntax
+-------------------------------------------------------------------------
+
+>>> pt_plane(x_co_ordinate,y_co_ordinate,z_co_ordinate,x_coeff,y_coeff,z_coeff,constant)
+
+x_co_ordinate - x co-ordinate value of the point, y_co_ordinate - y co-ordinate value of the point, z_co_ordinate - z co-ordinate value of the point.
+
+x_coeff - coefficient of x in the plane equation, y_coeff - coefficient of y in the plane equation, z_coeff - coefficient of z in the plane equation.
+
+constant - constant value of plane equation.
+
+Return type
+-------------------------------------------------------------------------
+
+float
+
+Example
+-------------------------------------------------------------------------
+
+>>> pyvect.dist.pt_plane(1,2,3,4,5,6,7)
+
+Output
+-------------------------------------------------------------------------
+
++-----------------------------------------------------------------------+
+| 4.444462481925879                                                     |
 +-----------------------------------------------------------------------+
