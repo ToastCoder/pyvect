@@ -38,6 +38,6 @@ def pt_plane(x,y,z,a,b,c,d):
 # Syntax: vectoralg.dist.or_plane(x_coeff,y_coeff,z_coeff,constant)
 # x_coeff - coefficient of x in the plane equation, y_coeff - coefficient of y in the plane equation, z_coeff - coefficient of z in the plane equation,
 # constant - constant value of plane equation.
-# Return type: float
+# Return type: array
 def or_plane(a,b,c,d):
     return abs(np.array([d])/(((a**2)+(b**2)+(c**2))**0.5))
