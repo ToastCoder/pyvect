@@ -33,3 +33,11 @@ def sk_line(a1,a2,u,v):
 # Return type: float
 def pt_plane(x,y,z,a,b,c,d):
     return abs(((a*x)+(b*y)+(c*z)+d)/(((a**2)+(b**2)+(c**2))**0.5))
+
+# or_plane() - Returns the distance between origin and a plane.
+# Syntax: vectoralg.dist.or_plane(x_coeff,y_coeff,z_coeff,constant)
+# x_coeff - coefficient of x in the plane equation, y_coeff - coefficient of y in the plane equation, z_coeff - coefficient of z in the plane equation,
+# constant - constant value of plane equation.
+# Return type: float
+def or_plane(a,b,c,d):
+    return abs(np.array([d])/(((a**2)+(b**2)+(c**2))**0.5))
