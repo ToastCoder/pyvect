@@ -41,3 +41,12 @@ def pt_plane(x,y,z,a,b,c,d):
 # Return type: array
 def or_plane(a,b,c,d):
     return abs(np.array([d])/(((a**2)+(b**2)+(c**2))**0.5))
+
+# pl_planes() - Returns the distance between two parallel planes.
+# Syntax: vectoralg.dist.pl_planes(x_coeff,y_coeff,z_coeff,constant1,constant2)
+# x_coeff - coefficient of x in the plane equation, y_coeff - coefficient of y in the plane equation, z_coeff - coefficient of z in the plane equation,
+# constant1 - constant value of first plane.
+# constant2 - constant value of second plane.
+# Return type: float
+def pl_planes(a,b,c,d1,d2):
+     return abs((np.array([d1])-np.array([d2]))/(((a**2)+(b**2)+(c**2))**0.5))
