@@ -50,3 +50,11 @@ def or_plane(a,b,c,d):
 # Return type: float
 def pl_planes(a,b,c,d1,d2):
      return abs((np.array([d1])-np.array([d2]))/(((a**2)+(b**2)+(c**2))**0.5))
+
+# distance() - Returns the magnitude of vector.
+# Syntax: vectoralg.dist.distance(x1,x2,y1,y2,z1,z2)
+# x1 - x_co_ordinate of first vector, y1 - y_co_ordinate of first vector, z1 - z_co_ordinate of first vector
+# x2 - x_co_ordinate of second vector, y2 - x_co_ordinate of second vector, z2 - z_co_ordinate of second vector
+# Return type: float
+def distance(x1,x2,y1,y2,z1,z2):
+    return abs((abs(x2-x1)**2)+(abs(y2-y1)**2)+(abs(z2-z1)**2))**0.5
