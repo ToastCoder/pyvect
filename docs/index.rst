@@ -852,3 +852,14 @@ About
 -------------------------------------------------------------------------
 
 Returns the distance between two parallel planes.
+
+Syntax
+-------------------------------------------------------------------------
+
+>>> pl_planes(x_coeff,y_coeff,z_coeff,constant1,constant2)
+
+x_coeff - coefficient of x in the plane equation, y_coeff - coefficient of y in the plane equation, z_coeff - coefficient of z in the plane equation,
+
+constant1 - constant value of first plane.
+
+constant2 - constant value of second plane.
