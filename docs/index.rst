@@ -863,3 +863,13 @@ x_coeff - coefficient of x in the plane equation, y_coeff - coefficient of y in 
 constant1 - constant value of first plane.
 
 constant2 - constant value of second plane.
+
+Return type
+-------------------------------------------------------------------------
+
+float
+
+Example
+-------------------------------------------------------------------------
+
+>>> pyvect.dist.pl_planes(2,3,8,1,6)
