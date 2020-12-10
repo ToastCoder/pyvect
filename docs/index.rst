@@ -595,6 +595,10 @@ Syntax
 
 >>> parallelogram(vector_1,vector_2)
 
+vector_1 - First vector
+
+vector_2 - Second vector
+
 Return type
 -----------------------------------------------------------------
 
