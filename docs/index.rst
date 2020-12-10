@@ -940,3 +940,8 @@ vector_1 - First vector
 vector_2 - Second vector 
 
 vector_3 - Third vector
+
+Return type
+-------------------------------------------------------------------------
+
+int
