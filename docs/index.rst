@@ -905,3 +905,7 @@ y1 - y_co_ordinate of first vector, y2 - x_co_ordinate of second vector
 
 z1 - z_co_ordinate of first vector, z2 - z_co_ordinate of second vector
 
+Return type
+-------------------------------------------------------------------------
+
+float
