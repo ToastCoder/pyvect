@@ -889,3 +889,15 @@ About
 -------------------------------------------------------------------------
 
 Returns the magnitude of vector.
+
+Syntax
+-------------------------------------------------------------------------
+
+>>> distance(x1,x2,y1,y2,z1,z2)
+
+x1 - x_co_ordinate of first vector, x2 - x_co_ordinate of second vector
+
+y1 - y_co_ordinate of first vector, y2 - x_co_ordinate of second vector
+
+z1 - z_co_ordinate of first vector, z2 - z_co_ordinate of second vector
+
