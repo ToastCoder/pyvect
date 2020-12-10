@@ -17,6 +17,10 @@ from area import *
 from . import cent
 from cent import *
 
+from . import dist
+from .dist import *
+
+
 # dot() - Returns the dot product of the two given vectors.
 # Syntax: pyvect.dot(vector_1,vector_2)
 # vector_1 - First vector , vector_2 - Second vector
