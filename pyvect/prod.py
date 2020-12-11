@@ -16,7 +16,7 @@ def s3(x,y,z):
     return (np.dot(np.cross(x,y),z))
 
 # s4() - Returns the scalar product of the given four vectors.
-# Syntax: vectoralg.prod.s4(vector_1,vector_2,vector_3,vector_4)
+# Syntax: pyvect.prod.s4(vector_1,vector_2,vector_3,vector_4)
 # vector_1 - First vector , vector_2 - Second vector , vector_3 - Third vector , vector_4 - Fourth vector
 # Return type: int
 def s4(w,x,y,z):
