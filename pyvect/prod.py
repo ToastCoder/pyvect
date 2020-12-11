@@ -14,3 +14,6 @@ import numpy as np
 # Return type: int
 def s3(x,y,z):
     return (np.dot(np.cross(x,y),z))
+
+def s4(w,x,y,z):
+    return np.dot(np.cross(w,x),np.cross(y,z))
