@@ -1003,3 +1003,14 @@ About
 -------------------------------------------------------------------------
 
 Returns the vector triple product of the given three vectors.
+
+Syntax
+-------------------------------------------------------------------------
+
+>>> pyvect.prod.v3(vector_1,vector_2,vector_3)
+
+vector_1 - First vector
+
+vector_2 - Second vector 
+
+vector_3 - Third vector
