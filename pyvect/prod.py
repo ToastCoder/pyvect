@@ -21,3 +21,6 @@ def s3(x,y,z):
 # Return type: int
 def s4(w,x,y,z):
     return np.dot(np.cross(w,x),np.cross(y,z))
+
+def v3(x,y,z):
+    return np.cross([np.cross(x,y)],z)
