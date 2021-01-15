@@ -30,7 +30,7 @@ def v3(x,y,z):
     return np.cross([np.cross(x,y)],z)
 
 # v4() - Returns the vector product of the given four vectors.
-# Syntax: vectoralg.prod.v4(vector_1,vector_2,vector_3,vector_4)
+# Syntax: pyvect.prod.v4(vector_1,vector_2,vector_3,vector_4)
 # vector_1 - First vector , vector_2 - Second vector , vector_3 - Third vector , vector_4 - Fourth vector
 # Return type: array
 def v4(w,x,y,z):
