@@ -18,7 +18,7 @@ from . import cent
 from cent import *
 
 from . import dist
-from .dist import *
+from dist import *
 
 
 # dot() - Returns the dot product of the two given vectors.
