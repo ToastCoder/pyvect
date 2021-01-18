@@ -12,13 +12,16 @@ import numpy as np
 
 # Importing Submodules
 from . import area
-from area import *
+from .area import *
 
 from . import cent
-from cent import *
+from .cent import *
 
 from . import dist
-from dist import *
+from .dist import *
+
+from . import prod
+from .prod import *
 
 
 # dot() - Returns the dot product of the two given vectors.
