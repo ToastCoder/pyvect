@@ -77,7 +77,7 @@ def unit_vector(x):
 # Syntax: pyvect.unit_normal(vector1,vector2)
 # vector_1 - First vector , vector_2 - Second vector
 # Return type: array
-#Note: First value of the returned list - Postive value of the unit normal
+# Note: First value of the returned list - Postive value of the unit normal
 #      Second value of the returned list - Negative value of the unit normal
 #      since the sign of unit normal is plus or minus.
 def unit_normal(x,y):
