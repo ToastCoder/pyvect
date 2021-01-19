@@ -76,13 +76,10 @@ def unit_vector(x):
 # unit_normal() - Returns the unit normal vector of given two vectors.
 # Syntax: pyvect.unit_normal(vector1,vector2)
 # vector_1 - First vector , vector_2 - Second vector
-"""
-Note: First value of the returned list - Postive value of the unit normal
-      Second value of the returned list - Negative value of the unit normal
-      since the sign of unit normal is plus or minus.
-"""
-
 # Return type: array
+#Note: First value of the returned list - Postive value of the unit normal
+#      Second value of the returned list - Negative value of the unit normal
+#      since the sign of unit normal is plus or minus.
 def unit_normal(x,y):
     return [np.cross(x,y)/np.linalg.norm(np.cross(x,y)),np.cross(x,y)/np.linalg.norm(np.cross(x,y))*-1]
 
