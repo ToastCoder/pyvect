@@ -9,7 +9,7 @@ with open(os.path.join(os.path.dirname(__file__), "README.md")) as f:
 setup(
   name = 'pyvect',         
   packages = ['pyvect'],
-  version = '1.0.4',
+  version = '1.0.5',
   license='MIT',
   description = 'Pyvect is a open source python module created for the purpose of simplifying the vector calculations such as finding the angle between vectors, projection of one vector over the other and much more...!',
   long_description = long_description,
