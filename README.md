@@ -18,6 +18,12 @@ Use [pip](https://pip.pypa.io/en/stable/) to install pyvect.
 pip install pyvect
 ```
 
+If the above command doesn't work, then use the following command
+
+```bash
+pip3 install pyvect
+```
+
 ### Importing pyvect to your program:
 
 ```python
