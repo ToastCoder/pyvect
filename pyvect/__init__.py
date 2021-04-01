@@ -26,6 +26,9 @@ from .prod import *
 from . import volume
 from .volume import *
 
+from . import section
+from .section import *
+
 
 # dot() - Returns the dot product of the two given vectors.
 # Syntax: pyvect.dot(vector_1,vector_2)
