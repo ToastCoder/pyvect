@@ -1,6 +1,6 @@
 # Pyvect
 
-Pyvect is a open source python module created for the purpose of simplifying the vector calculations such as finding the angle between vectors, projection of one vector over the other and much more...!
+Pyvect (or) Python Vector is an open source python module which is created for the purpose of simplifying most of the popular vector algebra calculations from basic angle between vectors, projection of one vector over the other to some higher vector calculations like finding the area, distance, volume and centroid of various popular vector shapes and much more.
 
 ### Developed by:
 
