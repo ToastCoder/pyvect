@@ -12,7 +12,7 @@ Pyvect (or) Python Vector is an open source python module which is created for t
 
 ### Installation:
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pyvect.
+Use [pip](https://pip.pypa.io/en/stable/) to install pyvect.
 
 ```bash
 pip install pyvect
