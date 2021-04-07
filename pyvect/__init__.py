@@ -116,10 +116,10 @@ def iscoplanar(a,b,c):
 # Return type: array
 def reciprocal(a,b,c):
     l=[]
-    l.append((np.cross(b,c)/np.dot([np.cross(a,b)],c)))
-    l.append((np.cross(c,a)/np.dot([np.cross(a,b)],c)))
-    l.append((np.cross(a,b)/np.dot([np.cross(a,b)],c)))
-    return np.array([l])
+    l.append((np.cross(b,c)/np.dot(np.cross(a,b),c)))
+    l.append((np.cross(c,a)/np.dot(np.cross(a,b),c)))
+    l.append((np.cross(a,b)/np.dot(np.cross(a,b),c)))
+    return np.array(l)
 
 # max_value() - Returns the maximum value between any two given vectors.
 # Syntax: pyvect.max_value(vector_1,vector_2)
