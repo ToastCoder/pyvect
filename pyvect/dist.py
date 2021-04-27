@@ -26,13 +26,12 @@ def sk_line(a1,a2,u,v):
     return abs(np.linalg.det(x))/np.linalg.norm(np.cross(u,v))
 
 # pt_plane() - Returns the distance between a point and a plane.
-# Syntax: pyvect.dist.pt_plane(x_co_ordinate,y_co_ordinate,z_co_ordinate,x_coeff,y_coeff,z_coeff,constant)
-# x_co_ordinate - x co-ordinate value of the point, y_co_ordinate - y co-ordinate value of the point, z_co_ordinate - z co-ordinate value of the point 
-# x_coeff - coefficient of x in the plane equation, y_coeff - coefficient of y in the plane equation, z_coeff - coefficient of z in the plane equation,
-# constant - constant value of plane equation.
+# Syntax: pyvect.dist.pt_plane(point,plane)
+# point - any point containing x,y and z co-ordinates
+# plane - a plane equation containing x,y,z co-efficients and a constant value refers the distance from origin
 # Return type: float
-def pt_plane(x,y,z,a,b,c,d):
-    return abs(((a*x)+(b*y)+(c*z)+d)/(((a**2)+(b**2)+(c**2))**0.5))
+def pt_plane(point,plane):
+    return abs(((plane[0]*point[0])+(plane[1]*point[1])+(plane[2]*point[2])+plane[3])/(((plane[0]**2)+(plane[1]**2)+(plane[2]**2))**0.5))
 
 # or_plane() - Returns the distance between origin and a plane.
 # Syntax: pyvect.dist.or_plane(x_coeff,y_coeff,z_coeff,constant)
