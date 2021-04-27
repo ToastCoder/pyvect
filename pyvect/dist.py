@@ -58,9 +58,8 @@ def pl_planes(plane1,plane2):
     return abs((plane2[3]-plane1[3])/(((plane1[0]*plane2[0])+(plane1[1]*plane2[1])+(plane1[2]*plane2[2]))**0.5))
 
 # distance() - Returns the distance between two vectors.
-# Syntax: pyvect.dist.distance(x1,x2,y1,y2,z1,z2)
-# x1 - x_co_ordinate of first vector, y1 - y_co_ordinate of first vector, z1 - z_co_ordinate of first vector
-# x2 - x_co_ordinate of second vector, y2 - x_co_ordinate of second vector, z2 - z_co_ordinate of second vector
+# Syntax: pyvect.dist.distance(vector_1,vector_2)
+# vector_1 - First Vector, vector_2 - Second Vector
 # Return type: float
-def distance(x1,y1,z1,x2,y2,z2):
-    return abs((x2-x1)**2+((y2-y1)**2)+((z2-z1)**2))**0.5
+def distance(vector_1,vector_2):
+    return (((vector_2[0]-vector_1[0])**2)+((vector_2[1]-vector_1[1])**2)+((vector_1[2]-vector_2[2])**2))**0.5
