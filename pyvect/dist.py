@@ -34,12 +34,11 @@ def pt_plane(point,plane):
     return abs(((plane[0]*point[0])+(plane[1]*point[1])+(plane[2]*point[2])+plane[3])/(((plane[0]**2)+(plane[1]**2)+(plane[2]**2))**0.5))
 
 # or_plane() - Returns the distance between origin and a plane.
-# Syntax: pyvect.dist.or_plane(x_coeff,y_coeff,z_coeff,constant)
-# x_coeff - coefficient of x in the plane equation, y_coeff - coefficient of y in the plane equation, z_coeff - coefficient of z in the plane equation,
-# constant - constant value of plane equation.
+# Syntax: pyvect.dist.or_plane(plane)
+# plane - a plane equation containing x,y,z co-efficients and a constant value refers the distance from origin
 # Return type: float
-def or_plane(a,b,c,d):
-    return abs(d/(((a**2)+(b**2)+(c**2))**0.5))
+def or_plane(plane):
+    return abs(plane[3]/(((plane[0]**2)+(plane[1]**2)+(plane[2]**2))**0.5))
 
 # pl_planes() - Returns the distance between two parallel planes.
 # Syntax: pyvect.dist.pl_planes(x_coeff,y_coeff,z_coeff,constant1,constant2)
