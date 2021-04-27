@@ -41,13 +41,21 @@ def or_plane(plane):
     return abs(plane[3]/(((plane[0]**2)+(plane[1]**2)+(plane[2]**2))**0.5))
 
 # pl_planes() - Returns the distance between two parallel planes.
-# Syntax: pyvect.dist.pl_planes(x_coeff,y_coeff,z_coeff,constant1,constant2)
-# x_coeff - coefficient of x in the plane equation, y_coeff - coefficient of y in the plane equation, z_coeff - coefficient of z in the plane equation,
-# constant1 - constant value of first plane.
-# constant2 - constant value of second plane.
+# Syntax: pyvect.dist.pl_planes(plane1,plane2)
+# plane - first plane equation containing x,y,z co-efficients and a constant value refers the distance from origin
+# plane - second plane equation containing x,y,z co-efficients and a constant value refers the distance from origin
 # Return type: float
-def pl_planes(a,b,c,d1,d2):
-     return abs((d1-d2)/(((a**2)+(b**2)+(c**2))**0.5))
+def pl_planes(plane1,plane2):
+    if plane1[0]%plane2[0] == 0:
+        x = plane1[0]/plane2[0]
+        for i in range(len(plane2)):
+            plane2[i] *= x
+    elif plane2[0]%plane1[0] == 0:
+        x = plane2[0]/plane1[0]
+        for i in range(len(plane1)):
+            plane1[i] *= x
+
+    return abs((plane2[3]-plane1[3])/(((plane1[0]*plane2[0])+(plane1[1]*plane2[1])+(plane1[2]*plane2[2]))**0.5))
 
 # distance() - Returns the distance between two vectors.
 # Syntax: pyvect.dist.distance(x1,x2,y1,y2,z1,z2)
