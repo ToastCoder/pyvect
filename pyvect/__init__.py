@@ -51,9 +51,9 @@ def dot(x,y):
 # Return type: array
 def cross(x,y):
     cross_product = []
-    cross_product[0].append(x[1]*y[2] - x[2]*y[1])
-    cross_product[1].append(-(x[0]*y[2] - x[2]*y[0]))
-    cross_product[2].append(x[0]*y[1] - x[1]*y[0])
+    cross_product.append(x[1]*y[2] - x[2]*y[1])
+    cross_product.append(-(x[0]*y[2] - x[2]*y[0]))
+    cross_product.append(x[0]*y[1] - x[1]*y[0])
     return cross_product
 
 # angle() - Returns the angle formed by the two vectors in degrees.
