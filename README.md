@@ -2,6 +2,8 @@
 
 Pyvect (or) Python Vector is an open source python module which is created for the purpose of simplifying most of the popular vector algebra calculations from basic angle between vectors, projection of one vector over the other to some higher vector calculations like finding the area, distance, volume and centroid of various popular vector shapes and much more.
 
+( Currently working under independency in code and will be updated in PyPi soon. )
+
 ### Developed by:
 
 * [Vigneshwar Ravichandar](https://github.com/ToastCoder/)
@@ -34,7 +36,6 @@ import pyvect
 
 Click here to view the [documentation](https://pyvect.readthedocs.io/)
 
-(Currently under development. Docs will be updated soon)
 
 ## License:
 [MIT](https://choosealicense.com/licenses/mit/)
