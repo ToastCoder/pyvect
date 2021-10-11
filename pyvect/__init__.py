@@ -29,20 +29,32 @@ from .volume import *
 from . import section
 from .section import *
 
+# HELPER FUNCTION
+# modVector() - Returns the modulus of a vector
+# Return type: float
+def modVector(x):
+    return ((x[0]*x[0])+(x[1]*x[1])+(x[2]*x[2])) ** 0.5
 
 # dot() - Returns the dot product of the two given vectors.
 # Syntax: pyvect.dot(vector_1,vector_2)
 # vector_1 - First vector , vector_2 - Second vector
 # Return type: int
 def dot(x,y):
-    return np.dot(x,y)
+    dot_product = 0
+    for i in range(3):
+        dot_product += x[i] * y[i]
+    return dot_product
 
 # cross() - Returns the cross product (or) vector of the two given vectors.
 # Syntax: pyvect.cross(vector_1,vector_2)
 # vector_1 - First vector , vector_2 - Second vector
 # Return type: array
 def cross(x,y):
-    return np.cross(x,y)
+    cross_product = []
+    cross_product[0].append(x[1]*y[2] - x[2]*y[1])
+    cross_product[1].append(-(x[0]*y[2] - x[2]*y[0]))
+    cross_product[2].append(x[0]*y[1] - x[1]*y[0])
+    return cross_product
 
 # angle() - Returns the angle formed by the two vectors in degrees.
 # Syntax: pyvect.angle(vector_1,vector_2)
