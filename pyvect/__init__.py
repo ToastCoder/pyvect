@@ -61,35 +61,38 @@ def cross(x,y):
 # vector_1 - First vector , vector_2 - Second vector
 # Return type: float
 def angle(x,y):
-    return np.arccos(np.dot(x,y)/(np.linalg.norm(x)*np.linalg.norm(y)))
+    return np.arccos(dot(x,y)/(modVector(x)*modVector(y)))
 
 # projection() - Returns the projection formed by first vector to the second vector.
 # Syntax: pyvect.projection(vector_1,vector_2)
 # vector_1 - First vector , vector_2 - Second vector
 # Return type: float
 def projection(x,y):
-    return np.dot(x,y)/np.linalg.norm(y)
+    return dot(x,y)/modVector(y)
 
 # isperpendicular() - Returns True if two vectors are perpendicular to each other. (i.e) Dot product of the two vectors is zero.
 # Syntax: pyvect.isperpendicular(vector_1,vector_2)
 # vector_1 - First vector , vector_2 - Second vector
 # Return type: bool
 def isperpendicular(x,y):
-    return np.dot(x,y) == 0
+    return dot(x,y) == 0
 
 # iscollinear() - Returns True if two vectors are collinear. (i.e) Cross product of the two vectors is zero.
 # Syntax: pyvect.iscollinear(vector_1,vector_2)
 # vector_1 - First vector , vector_2 - Second vector
 # Return type: bool
 def iscollinear (x,y):
-    return any(np.cross(x,y)) == 0
+    return any(cross(x,y)) == 0
 
 # unit_vector() - Returns the unit vector of the given vector.
 # Syntax: pyvect.unit_vector(vector_1)
 # vector_1 - Vector provided to the function
 # Return type: array
 def unit_vector(x):
-    return x/np.linalg.norm(x)
+    mod = modVector(x)
+    x = [i/mod for i in x]
+    return x
+
 
 # unit_normal() - Returns the unit normal vector of given two vectors.
 # Syntax: pyvect.unit_normal(vector1,vector2)
@@ -99,28 +102,35 @@ def unit_vector(x):
 #      Second value of the returned list - Negative value of the unit normal
 #      since the sign of unit normal is plus or minus.
 def unit_normal(x,y):
-    return [np.cross(x,y)/np.linalg.norm(np.cross(x,y)),np.cross(x,y)/np.linalg.norm(np.cross(x,y))*-1]
+    res = unit_vector(cross(x, y))
+    return [res, [-i for i in res]]
 
 # bisector() - Returns a vector in the direction of the bisector of the angle between two vectors.
 # Syntax: pyvect.bisector(vector_1,vector_2)
 # vector_1 - First vector , vector_2 - Second vector
 # Return type: array
 def bisector(a,b):
-    return unit_vector(a)+unit_vector(b)
+    a = unit_vector(a)
+    b = unit_vector(b)
+    print(a)
+    print(b)
+    return [a[i] + b[i] for i in range(3)]
 
 # pos_vector() - Returns a position vector between any two given vectors.
 # Syntax: pyvect.pos_vector(vector_1,vector_2)
 # vector_1 - First vector , vector_2 - Second vector.
 # Return type: array
 def pos_vector(a,b):
-    return 0.5*(np.array([a])+np.array([b]))
+    res = [int(0.5 * (a[i]+b[i])) for i in range(3)]
+    return res
 
 # iscoplanar() - Returns the boolean value (True) if the given three vectors satisfy the condition.
 # Syntax: pyvect.iscoplanar(vector_1,vector_2,vector_3)
 # vector_1 - First vector , vector_2 - Second vector , vector_3 - Third vector.
 # Return type: bool
 def iscoplanar(a,b,c):
-    return np.dot(np.cross(a,b),c)==0
+    return dot(cross(a,b),c)==0
+
 
 # reciprocal() - Returns three reciprocal vector for the given three vectors.
 # Syntax: pyvect.reciprocal(vector_1,vector_2,vector_3)
