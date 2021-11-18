@@ -42,29 +42,35 @@ def perf_tester(func):
 
         print(f'Function Name: {func.__name__}')
         print(f'Description: {func.__doc__}')
-        print(f'Memory usage:\t\t {current / 10**6:.6f} MB \n'
-              f'Peak memory usage:\t {peak / 10**6:.6f} MB ')
+        print(f'Memory usage:\t\t {current / 10**3:.6f} KB \n'
+              f'Peak memory usage:\t {peak / 10**3:.6f} KB ')
         print(f'Time elapsed in seconds: {finish_time - start_time:.6f} s')
-        print(f'{"-"*40}')
+        
 
         tracemalloc.stop()
-
+        
         return func(*args, **kwargs)
+        
 
     return wrapper
 
 # Tester function for pyvect.dot()
 @perf_tester
-def dot_tester(a:List[int], b:List[int]) -> str:
+def dot_tester(x:List[int], y:List[int]) -> str:
     '''Tests the dot product function'''
-    return f"Dot Product: {pyvect.dot(a,b)}"
+    return f"Dot Product: {pyvect.dot(x,y)}"
+
+# Tester function for pyvect.cross()
+@perf_tester
+def cross_tester(x:List[int], y:List[int]) -> str:
+    '''Tests the cross product function'''
+    return f"Cross Product: {pyvect.cross(x,y)}"
 
 # Main function
 if __name__ == '__main__':
+
     print(dot_tester([1,2,3],[4,5,6]))
+    print(f'{"-"*40}')
 
-
-
-
-
-
+    print(cross_tester([1,2,3],[4,5,6]))
+    print(f'{"-"*40}')
