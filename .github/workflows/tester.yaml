@@ -1,0 +1,21 @@
+name: Tester
+
+on:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install-OS-Dependencies
+      run: apt install python3 && apt install python3-pip
+    - name: Install-Python-Dependencies
+      run: python3 -m pip3 install -r requirements.txt
+    - name: Testing-Source
+      run: python3 tests/tester.py
