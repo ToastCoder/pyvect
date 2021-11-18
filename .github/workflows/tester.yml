@@ -13,9 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Install-OS-Dependencies
+    - name: Install OS Dependencies
       run: sudo apt install python3 && sudo apt install python3-pip
-    - name: Install-Python-Dependencies
+    - name: Install Python Dependencies
       run: python3 -m pip install -r requirements.txt
-    - name: Testing-Source
+    - name: Testing Source
       run: python3 tests/tester.py

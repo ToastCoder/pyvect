@@ -66,6 +66,12 @@ def cross_tester(x:List[int], y:List[int]) -> str:
     '''Tests the cross product function'''
     return f"Cross Product: {pyvect.cross(x,y)}"
 
+# Tester function for pyvect.angle()
+@perf_tester
+def angle_tester(x:List[int], y:List[int]) -> str:
+    '''Tests the angle function'''
+    return f"Angle: {pyvect.angle(x,y)}"
+
 # Main function
 if __name__ == '__main__':
 
@@ -74,4 +80,3 @@ if __name__ == '__main__':
 
     print(cross_tester([1,2,3],[4,5,6]))
     print(f'{"-"*40}')
-    
