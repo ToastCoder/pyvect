@@ -74,3 +74,4 @@ if __name__ == '__main__':
 
     print(cross_tester([1,2,3],[4,5,6]))
     print(f'{"-"*40}')
+    
