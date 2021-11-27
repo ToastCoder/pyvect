@@ -84,6 +84,12 @@ def modVector_tester(x:List[int]) -> str:
     '''Tests the modVector function'''
     return f"ModVector: {pyvect.modVector(x)}"
 
+# Tester function for isperpendicular()
+@perf_tester
+def isperpendicular_tester(x:List[int], y:List[int]) -> str:
+    '''Tests the isperpendicular function'''
+    return f"isperpendicular: {pyvect.isperpendicular(x,y)}"
+
 # Main function
 if __name__ == '__main__':
 
@@ -100,4 +106,7 @@ if __name__ == '__main__':
     print(f'{"-"*40}')
 
     print(modVector_tester([1,2,3]))
+    print(f'{"-"*40}')
+
+    print(isperpendicular_tester([1,2,3],[4,5,6]))
     print(f'{"-"*40}')
