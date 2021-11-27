@@ -137,22 +137,23 @@ def iscoplanar(a,b,c):
 # vector_1 - First vector , vector_2 - Second vector , vector_3 - Third vector.
 # Return type: array
 def reciprocal(a,b,c):
-    l=[]
-    l.append((np.cross(b,c)/np.dot(np.cross(a,b),c)))
-    l.append((np.cross(c,a)/np.dot(np.cross(a,b),c)))
-    l.append((np.cross(a,b)/np.dot(np.cross(a,b),c)))
-    return np.array(l)
+    res = []
+    temp = dot(cross(a,b), c)
+    res.append([i/temp for i in cross(b, c)])
+    res.append([i/temp for i in cross(c, a)])
+    res.append([i/temp for i in cross(a, b)])
+    return res
 
 # max_value() - Returns the maximum value between any two given vectors.
 # Syntax: pyvect.max_value(vector_1,vector_2)
 # vector_1 - First vector , vector_2 - Second vector.
 # Return type: int
 def max_value(a,b):
-    return np.linalg.norm(a)*np.linalg.norm(b)
+    return modVector(a) * modVector(b)
 
 # min_value() - Returns the minimum value between any two given vectors.
 # Syntax: pyvect.min_value(vector_1,vector_2)
 # vector_1 - First vector , vector_2 - Second vector.
 # Return type: int
 def min_value(a,b):
-    return -1*(np.linalg.norm(a)*np.linalg.norm(b))
+    return -(modVector(a) * modVector(b))
