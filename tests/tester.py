@@ -72,6 +72,12 @@ def angle_tester(x:List[int], y:List[int]) -> str:
     '''Tests the angle function'''
     return f"Angle: {pyvect.angle(x,y)}"
 
+# Tester function for pyvect.projection()
+@perf_tester
+def projection_tester(x:List[int], y:List[int]) -> str:
+    '''Tests the projection function'''
+    return f"Projection: {pyvect.projection(x,y)}"
+
 # Main function
 if __name__ == '__main__':
 
@@ -82,4 +88,7 @@ if __name__ == '__main__':
     print(f'{"-"*40}')
 
     print(angle_tester([1,2,3],[4,5,6]))
+    print(f'{"-"*40}')
+
+    print(projection_tester([1,2,3],[4,5,6]))
     print(f'{"-"*40}')
