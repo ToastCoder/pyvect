@@ -78,6 +78,12 @@ def projection_tester(x:List[int], y:List[int]) -> str:
     '''Tests the projection function'''
     return f"Projection: {pyvect.projection(x,y)}"
 
+# Tester function for pyvect.modVector()
+@perf_tester
+def modVector_tester(x:List[int]) -> str:
+    '''Tests the modVector function'''
+    return f"ModVector: {pyvect.modVector(x)}"
+
 # Main function
 if __name__ == '__main__':
 
@@ -91,4 +97,7 @@ if __name__ == '__main__':
     print(f'{"-"*40}')
 
     print(projection_tester([1,2,3],[4,5,6]))
+    print(f'{"-"*40}')
+
+    print(modVector_tester([1,2,3]))
     print(f'{"-"*40}')
