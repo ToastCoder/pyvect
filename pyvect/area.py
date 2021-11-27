@@ -4,7 +4,8 @@
 # >>> pyvect.area
 
 # IMPORTING REQUIRED MODULES
-import numpy as np
+from . import __init__
+from .__init__ import *
 
 # FUNCTIONS
 
@@ -12,22 +13,25 @@ import numpy as np
 # Syntax: pyvect.area.triangle_adj(vector_1,vector_2)
 # vector_1 - First adjacent side , vector_2 - Second adjacent side
 # Return type: float
-def triangle_adj(x,y):
-    return np.linalg.norm(np.cross(x,y))*0.5
+def triangle_adj(a,b):
+    return modVector(cross(a,b)) * 0.5
 
 # triangle_pos() - Returns the area of the triangle based on the given three positional vectors.
 # Syntax: pyvect.area.triangle_pos(p1,p2,p3)
 # p1,p2,p3 - positional vectors of the triangle.
 # Return type: float
 def triangle_pos(a,b,c):
-    return 0.5*np.linalg.norm(np.cross(a,b)+np.cross(b,c)+np.cross(c,a))
+    res = []
+    for i in range(3):
+        res.append(cross(a, b)[i] + cross(b, c)[i] + cross(c, a)[i])
+    return 0.5 * modVector(res)
 
 # quad() - Returns the area of a quadrilateral based on the diagonal vectors.
 # Syntax: pyvect.area.quad(diagonal_1,diagonal_2)
 # diagonal_1 - Primary diagonal of the quadrilateral, diagonal_2 - Secondary diagonal of the quadrilateral.
 # Return type: float
-def quad(d1,d2):
-    return 0.5*np.linalg.norm(np.cross(d1,d2))
+def quad(a,b):
+    return 0.5 * modVector(cross(a,b))
 
 # parallelogram() - Returns the area of parallelogram based on the two adjacent vectors.
 # Syntax: pyvect.area.parallelogram(vector_1,vector_2)
