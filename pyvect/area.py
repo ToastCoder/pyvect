@@ -38,11 +38,12 @@ def quad(a,b):
 # vector_1 - First vector , vector_2 - Second vector.
 # Return type: float
 def parallelogram(a,b):
-    return np.linalg.norm(np.cross(a,b))
+    return modVector(cross(a,b))
 
 # tetrahedron() - Returns the area of tetrahedron based on the three position vectors.
 # Syntax: pyvect.area.tetrahedron(p1,p2,p3)
 # p1,p2,p3 - positional vectors of the tetrahedron.
 # Return type: float
 def tetrahedron(a,b,c):
-    return 0.1666*np.dot(np.cross(a,b),c)
+    res = 0.1666 * dot(cross(a,b),c)
+    return res if res > 0 else res
