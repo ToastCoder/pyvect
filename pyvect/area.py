@@ -46,4 +46,4 @@ def parallelogram(a,b):
 # Return type: float
 def tetrahedron(a,b,c):
     res = 0.1666 * dot(cross(a,b),c)
-    return res if res > 0 else res
+    return res if res > 0 else -res
