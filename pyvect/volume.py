@@ -3,9 +3,6 @@
 # TO USE THE FUNCTIONS IN THIS SUBMODULE
 # >>> pyvect.volume
 
-# IMPORTING REQUIRED MODULES
-import numpy as np
-
 # IMPORTING REQUIRED SUB-MODULES
 from . import prod
 from .prod import *
@@ -17,4 +14,4 @@ from .prod import *
 # vector_1 - First vector , vector_2 - Second vector , vector_3 - Third vector
 # Return type: int
 def parallelopiped(x,y,z):
-    return abs(prod.s3(x,y,z))
+    return abs(s3(x,y,z))
