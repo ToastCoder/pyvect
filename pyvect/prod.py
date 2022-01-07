@@ -5,7 +5,7 @@
 
 # IMPORTING REQUIRED MODULES
 from . import __init__
-from __init__ import *
+from .__init__ import *
 
 # FUNCTIONS
 
