@@ -93,20 +93,30 @@ def isperpendicular_tester(x:List[int], y:List[int]) -> str:
 # Main function
 if __name__ == '__main__':
 
-    print(dot_tester([1,2,3],[4,5,6]))
+    a1 = [10,2,4]
+    a2 = [4,2,6]
+    a3 = [-7,-6,-9]
+    a4 = [4,20,12]
+    a5 = [1,0,0]
+    b1 = [1,2,-2,9]
+    b2 = [2,4,-4,-6]
+    u = 15
+    v = 11
+
+    print(dot_tester(a4,a3))
     print(f'{"-"*40}')
 
-    print(cross_tester([1,2,3],[4,5,6]))
+    print(cross_tester(a1,a2))
     print(f'{"-"*40}')
 
-    print(angle_tester([1,2,3],[4,5,6]))
+    print(angle_tester(a1,a2))
     print(f'{"-"*40}')
 
-    print(projection_tester([1,2,3],[4,5,6]))
+    print(projection_tester(a2,a3))
     print(f'{"-"*40}')
 
-    print(modVector_tester([1,2,3]))
+    print(modVector_tester(a3))
     print(f'{"-"*40}')
 
-    print(isperpendicular_tester([1,2,3],[4,5,6]))
+    print(isperpendicular_tester(a2,a4))
     print(f'{"-"*40}')
